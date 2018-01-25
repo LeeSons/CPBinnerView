@@ -22,4 +22,4 @@ _binnerView = [[CPBinnerView alloc] initWithFrame:CGRectMake(0, 0, self.frame.si
 
 ## cell样式完全可以自定义，来实现各种各样的轮播效果。
 
-![CPBinnerView]()
+![CPBinnerView](https://github.com/LeeSons/CPBinnerView/blob/master/screen.gif)
