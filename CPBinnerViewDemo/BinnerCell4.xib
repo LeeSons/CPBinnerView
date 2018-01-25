@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BinnerCell4">
+            <rect key="frame" x="0.0" y="0.0" width="293" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="293" height="140"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tx.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="RHe-oT-NE9">
+                        <rect key="frame" x="10" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="MUf-DV-EnL"/>
+                            <constraint firstAttribute="width" constant="40" id="ZWA-MA-LCv"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大顺子" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Auy-MD-Y2M">
+                        <rect key="frame" x="58" y="13" width="225" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1小时前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utP-dQ-9G1">
+                        <rect key="frame" x="58" y="34.5" width="225" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="给别人希望，也就是给自己希望，给别人留退路，也就是给自己留后路。没有过不去的事情，只有过不去的心情。只有回不去的过往，没有到不了的明天。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9I-OA-rLx">
+                        <rect key="frame" x="10" y="60" width="273" height="70"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="RHe-oT-NE9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="3O9-IL-eoj"/>
+                <constraint firstItem="RHe-oT-NE9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="3nt-cj-SZU"/>
+                <constraint firstAttribute="trailing" secondItem="c9I-OA-rLx" secondAttribute="trailing" constant="10" id="6FF-c7-19E"/>
+                <constraint firstItem="utP-dQ-9G1" firstAttribute="bottom" secondItem="RHe-oT-NE9" secondAttribute="bottom" constant="-2" id="9lN-xH-O49"/>
+                <constraint firstAttribute="bottom" secondItem="c9I-OA-rLx" secondAttribute="bottom" constant="10" id="Dk4-M0-o30"/>
+                <constraint firstAttribute="trailing" secondItem="Auy-MD-Y2M" secondAttribute="trailing" constant="10" id="L6x-1j-ZP7"/>
+                <constraint firstItem="Auy-MD-Y2M" firstAttribute="top" secondItem="RHe-oT-NE9" secondAttribute="top" constant="3" id="R8I-Vn-ain"/>
+                <constraint firstItem="utP-dQ-9G1" firstAttribute="trailing" secondItem="Auy-MD-Y2M" secondAttribute="trailing" id="SWb-Eq-ISM"/>
+                <constraint firstItem="c9I-OA-rLx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="XYs-2G-qLm"/>
+                <constraint firstItem="utP-dQ-9G1" firstAttribute="leading" secondItem="Auy-MD-Y2M" secondAttribute="leading" id="ogv-EX-Z7Y"/>
+                <constraint firstItem="c9I-OA-rLx" firstAttribute="top" secondItem="RHe-oT-NE9" secondAttribute="bottom" constant="10" id="ssn-EM-El0"/>
+                <constraint firstItem="Auy-MD-Y2M" firstAttribute="leading" secondItem="RHe-oT-NE9" secondAttribute="trailing" constant="8" id="w1f-q6-vJS"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="293" height="140"/>
+            <connections>
+                <outlet property="contentLabel" destination="c9I-OA-rLx" id="Id6-Ks-cd5"/>
+                <outlet property="headerImageView" destination="RHe-oT-NE9" id="3qM-rv-Lok"/>
+                <outlet property="nameLabel" destination="Auy-MD-Y2M" id="8J3-hv-rRO"/>
+                <outlet property="timeLabel" destination="utP-dQ-9G1" id="GaD-vk-Hyg"/>
+            </connections>
+            <point key="canvasLocation" x="-66.5" y="-91"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="tx.jpg" width="300" height="300"/>
+    </resources>
+</document>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BinnerCell2">
+            <rect key="frame" x="0.0" y="0.0" width="294" height="160"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="294" height="160"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OBa-VF-B4e">
+                        <rect key="frame" x="15" y="0.0" width="264" height="110"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="美丽的景色" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnR-xh-Gkq">
+                        <rect key="frame" x="15" y="115" width="264" height="18"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这里的景色太美了！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQk-wa-c7G">
+                        <rect key="frame" x="15" y="139" width="264" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="pQk-wa-c7G" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="0VR-S6-AOr"/>
+                <constraint firstAttribute="trailing" secondItem="OBa-VF-B4e" secondAttribute="trailing" constant="15" id="3t2-I4-fJi"/>
+                <constraint firstItem="OBa-VF-B4e" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Gu1-O7-QlM"/>
+                <constraint firstAttribute="bottom" secondItem="OBa-VF-B4e" secondAttribute="bottom" constant="50" id="M4F-l5-9gx"/>
+                <constraint firstItem="bnR-xh-Gkq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="Tsf-F2-YjQ"/>
+                <constraint firstAttribute="bottom" secondItem="pQk-wa-c7G" secondAttribute="bottom" constant="5" id="aid-OE-hwt"/>
+                <constraint firstAttribute="trailing" secondItem="bnR-xh-Gkq" secondAttribute="trailing" constant="15" id="dqA-gP-KHM"/>
+                <constraint firstItem="bnR-xh-Gkq" firstAttribute="top" secondItem="OBa-VF-B4e" secondAttribute="bottom" constant="5" id="ej1-Kr-WWh"/>
+                <constraint firstItem="OBa-VF-B4e" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="vZB-mp-pLR"/>
+                <constraint firstAttribute="trailing" secondItem="pQk-wa-c7G" secondAttribute="trailing" constant="15" id="z4i-vE-whL"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="294" height="160"/>
+            <connections>
+                <outlet property="imageView" destination="OBa-VF-B4e" id="xpM-rd-QrT"/>
+                <outlet property="subTitle" destination="pQk-wa-c7G" id="tNH-Dk-LW0"/>
+                <outlet property="title" destination="bnR-xh-Gkq" id="WCg-dF-0Bp"/>
+            </connections>
+            <point key="canvasLocation" x="-1" y="-81"/>
+        </collectionViewCell>
+    </objects>
+</document>

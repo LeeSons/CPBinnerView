@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BinnerCell3">
+            <rect key="frame" x="0.0" y="0.0" width="271" height="35"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="271" height="35"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xlb.png" translatesAutoresizingMaskIntoConstraints="NO" id="xQ8-Pe-mqn">
+                        <rect key="frame" x="10" y="10" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="7sa-1f-PZL"/>
+                            <constraint firstAttribute="width" constant="15" id="e7f-lC-jC7"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="好消息！花花大卖场特价活动开启！全场最低2折起！！" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8U-sT-CHW">
+                        <rect key="frame" x="35" y="10.5" width="226" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="xQ8-Pe-mqn" firstAttribute="centerY" secondItem="SEy-5g-ep8" secondAttribute="centerY" id="9o3-1J-smv"/>
+                <constraint firstAttribute="trailing" secondItem="H8U-sT-CHW" secondAttribute="trailing" constant="10" id="Apo-v8-y5j"/>
+                <constraint firstItem="H8U-sT-CHW" firstAttribute="leading" secondItem="xQ8-Pe-mqn" secondAttribute="trailing" constant="10" id="No5-rz-tDx"/>
+                <constraint firstItem="xQ8-Pe-mqn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="Qhh-7V-jou"/>
+                <constraint firstItem="H8U-sT-CHW" firstAttribute="centerY" secondItem="xQ8-Pe-mqn" secondAttribute="centerY" id="ZDW-8W-Vsa"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="271" height="35"/>
+            <connections>
+                <outlet property="iconView" destination="xQ8-Pe-mqn" id="gQA-nI-ydC"/>
+                <outlet property="titleLabel" destination="H8U-sT-CHW" id="8SH-PW-jSy"/>
+            </connections>
+            <point key="canvasLocation" x="-73.5" y="-176.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="xlb.png" width="16" height="16"/>
+    </resources>
+</document>

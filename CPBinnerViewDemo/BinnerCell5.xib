@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BinnerCell5">
+            <rect key="frame" x="0.0" y="0.0" width="334" height="118"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="334" height="118"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pt.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="AID-x8-cde">
+                        <rect key="frame" x="10" y="10" width="98" height="98"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="AID-x8-cde" secondAttribute="height" multiplier="1:1" id="8eJ-AX-D0k"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的幸福刚刚好" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="at9-IY-RMD">
+                        <rect key="frame" x="118" y="10" width="206" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="VtY-Bl-cDv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="嫁给爱情，然后笑着结婚 最适合的彼此，不是一开始的一拍即合，而是愿意在未来漫长岁月中为彼此变成更好的两个人，爱情不存在天造地设的一对，只有彼此努力，成为适合我们的对方。 有些事情总是在自然的状态下发生，给我们惊喜，让我们铭记于心。好的爱情，是找个相互" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GbD-i0-lGI">
+                        <rect key="frame" x="118" y="35" width="206" height="73"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="AID-x8-cde" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="1aI-iJ-xfH"/>
+                <constraint firstAttribute="bottom" secondItem="GbD-i0-lGI" secondAttribute="bottom" constant="10" id="42A-Vx-JMA"/>
+                <constraint firstAttribute="trailing" secondItem="GbD-i0-lGI" secondAttribute="trailing" constant="10" id="7nv-7T-lf3"/>
+                <constraint firstAttribute="bottom" secondItem="AID-x8-cde" secondAttribute="bottom" constant="10" id="J7U-aK-Rjg"/>
+                <constraint firstAttribute="trailing" secondItem="at9-IY-RMD" secondAttribute="trailing" constant="10" id="OGL-kX-KQ1"/>
+                <constraint firstItem="AID-x8-cde" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="aJm-zB-cNM"/>
+                <constraint firstItem="GbD-i0-lGI" firstAttribute="leading" secondItem="AID-x8-cde" secondAttribute="trailing" constant="10" id="gQ4-vB-oE5"/>
+                <constraint firstItem="at9-IY-RMD" firstAttribute="leading" secondItem="AID-x8-cde" secondAttribute="trailing" constant="10" id="lAr-Of-fEe"/>
+                <constraint firstItem="at9-IY-RMD" firstAttribute="top" secondItem="AID-x8-cde" secondAttribute="top" id="mf4-AU-MxC"/>
+                <constraint firstItem="GbD-i0-lGI" firstAttribute="top" secondItem="at9-IY-RMD" secondAttribute="bottom" constant="5" id="rq8-hK-dZX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="334" height="118"/>
+            <connections>
+                <outlet property="contentLabel" destination="GbD-i0-lGI" id="h9w-8V-riv"/>
+                <outlet property="imageView" destination="AID-x8-cde" id="cda-zC-iYf"/>
+                <outlet property="titleLabel" destination="at9-IY-RMD" id="pzk-6e-iQn"/>
+            </connections>
+            <point key="canvasLocation" x="-61" y="-114"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="pt.jpg" width="450" height="300"/>
+    </resources>
+</document>
