@@ -95,7 +95,11 @@
     [super layoutSubviews];
     [self getRowCount];
     [self setSubViewFrame];
-    [self firstTodo];
+    
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [self firstTodo];
+    });
 }
 
 #pragma mark -- UICollectionViewDataSource
